@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interactive Drawing and Image Adding</title>
+	<link rel="stylesheet" href="style/body.css" type="text/css">
+	<link rel="stylesheet" href="style/button.css" type="text/css">
+</head>
+<body>
+	<div class="container">
+		<canvas class="canvas" id="canvas_bg"></canvas>
+	</div>
+
+	<div class="button-wrapper">
+		<button onclick="reset_draw()">
+		<img class="icon" src="image/gomme.png" alt="Button Image">
+		</button>
+
+		<button onclick="tool_gomme()">
+		<img class="icon" src="image/gomme.png" alt="Button Image">
+		</button>
+
+		<button onclick="tool_zoom()">
+		<img class="icon" src="image/zoom.png" alt="Button Image">
+		</button>
+
+		<div class="draw_wrapper">
+			<button onclick="tool_draw()" id="but_draw">
+			<img class="icon" src="image/brush.png" alt="Button Image">
+			</button>
+			 <input type="color" id="draw_color" value="#ff0000" id="draw_color_picker">
+		 </div>
+
+		 <button onclick="tool_zoom()">
+		 <img class="icon" src="image/zoom.png" alt="Button Image">
+		 </button>
+		 <input type="color" name="name1" id="name1" value="#ffffff">
+	</div>
+
+
+
+	<script src="src/utility/structure.js"></script>
+	<script src="src/utility/utility.js"></script>
+	<script src="src/utility/canvas.js"></script>
+	<script src="src/tool/mouse.js"></script>
+	<script src="src/tool/tool.js"></script>
+	<script src="src/main.js"></script>
+
+
+</body>
+</html>
+<img class="fullscreen-img" id="earth" src="image/earth.jpg" alt="Your Image">

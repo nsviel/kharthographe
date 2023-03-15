@@ -1,0 +1,49 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #111111;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.fullscreen-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  margin: 0 auto;
+  margin-left: 200px;
+  cursor: crosshair;
+  z-index: 1;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin-left: 200px;
+  z-index: 2;
+}
+
+.earth {
+   background-image: url("image/earth.jpg");
+   background-size: cover;
+ }
+
+.click-img {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: 3;
+}
