@@ -12,3 +12,8 @@ var tool = {
   zoom: false,
   brush: false,
 }
+
+var zoom = {
+  activated: false,
+  level: 1,
+}

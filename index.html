@@ -28,12 +28,9 @@
 			<img class="icon" src="image/brush.png" alt="Button Image">
 			</button>
 			 <input type="color" id="draw_color" value="#ff0000" id="draw_color_picker">
-		 </div>
-
-		 <button onclick="tool_zoom()">
-		 <img class="icon" src="image/zoom.png" alt="Button Image">
-		 </button>
-		 <input type="color" name="name1" id="name1" value="#ffffff">
+		</div>
+		<input type="range" id="draw_range" min="0.1" max="10" step="0.1" value="1">
+		<p style="color: white;">Selected value: <span id="draw_range_value"></span></p>
 	</div>
 
 
@@ -42,10 +39,12 @@
 	<script src="src/utility/utility.js"></script>
 	<script src="src/utility/canvas.js"></script>
 	<script src="src/tool/mouse.js"></script>
+	<script src="src/tool/zoom.js"></script>
+
+	<script src="src/tool/drawing.js"></script>
 	<script src="src/tool/tool.js"></script>
 	<script src="src/main.js"></script>
 
-
+	<img class="fullscreen-img" id="earth" src="image/earth.jpg" alt="Your Image">
 </body>
 </html>
-<img class="fullscreen-img" id="earth" src="image/earth.jpg" alt="Your Image">

@@ -37,8 +37,10 @@ html, body {
 }
 
 .earth {
-   background-image: url("image/earth.jpg");
-   background-size: cover;
+  background-image: url("image/earth.jpg");
+  background-size: cover;
+  transition: transform 0.5s ease-in-out;
+  transform-origin: top left;
  }
 
 .click-img {
@@ -46,4 +48,9 @@ html, body {
   width: 200px;
   height: 200px;
   z-index: 3;
+}
+
+#draw_range_display{
+  color: white,
+  background-color: black,
 }
